@@ -1,0 +1,6 @@
+@use '../abstracts/abstracts' as var;
+@use '../abstracts/abstracts' as mixin;
+
+.button {
+    @include mixin.button();
+}

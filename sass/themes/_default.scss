@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/abstracts' as mixin;
+
+html * {
+    font-size: var.$font-size;
+    width: 100%;
+}
+ 
+body {
+    overflow-x: hidden;
+    font-family: var.$primary-font;
+} 

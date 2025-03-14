@@ -1,0 +1,9 @@
+@use '../abstracts/abstracts' as var;
+@use '../abstracts/abstracts' as mixin;
+
+// Margen específico para el main de la página home
+.home {
+    main {
+        margin-bottom: 120px;
+    }
+}

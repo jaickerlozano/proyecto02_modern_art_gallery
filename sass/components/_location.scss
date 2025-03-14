@@ -1,0 +1,149 @@
+@use '../abstracts/abstracts' as var;
+@use '../abstracts/abstracts' as mixin;
+
+.location {
+    width: 100%;
+    
+    @include mixin.breakpoint(tablet) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7.5rem;
+    }
+
+    @include mixin.breakpoint(desktop) {
+        position: relative;
+        justify-content: center;
+        background-image: linear-gradient(to right, var.$black 50%, var.$white 50%);
+        margin-bottom: 11.25rem;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 2rem;
+        @include mixin.breakpoint(tablet) {
+            margin-bottom: 0;
+        }
+
+        .tablet {
+            @include mixin.breakpoint(tablet) {
+                width: 120%;
+            }
+        }
+
+        @include mixin.breakpoint(desktop) {
+            width: 40%;
+        }
+
+    }
+
+    &__content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        @include mixin.breakpoint(tablet) {
+            margin-top: 145px;
+        }
+
+        @include mixin.breakpoint(desktop) {
+            position: absolute;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                'title description'
+                'title button';
+            justify-items: center;
+        }
+    }
+
+    &__title {
+        width: 95%;
+        font-size: 3.75rem;
+        font-weight: 900;
+        line-height: 55px;
+        margin-bottom: 2rem;
+        color: var.$black;
+        span {
+            display: block;
+            font-size: inherit;
+        }
+
+        @include mixin.breakpoint(tablet) {
+            font-size: 70px;
+            line-height: 65px;
+            margin-bottom: 3rem;
+        }
+
+        @include mixin.breakpoint(desktop) {
+            color:var.$white;
+            font-size: 6rem;
+            line-height: 88px;
+            grid-area: title;
+            width: 80%;
+            margin-left: 40px;
+        }
+    }
+
+    &__description {
+        color: var.$grey;
+        margin-bottom: 2rem;
+        @include mixin.breakpoint(tablet) {
+            width: 90%;
+            margin-bottom: 3rem;
+            line-height: 28px;
+        }
+
+        @include mixin.breakpoint(desktop) {
+            grid-area: description;
+            font-size: 22px;
+            line-height: 2rem;
+            width: 350px;
+            margin-left: 115px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: stretch;
+        max-width: 240px;
+        margin-bottom: 120px;
+
+        a:last-child {
+            padding: 1.5rem;
+            background-color: var.$brown;
+            width: 56px;
+        }
+
+        img{
+            width: 8px;
+        }
+
+        @include mixin.breakpoint(desktop) {
+            grid-area: button;
+        }
+    }
+}
+
+// Activación de elementos según su clase y media query
+.tablet {
+    display: none;
+    @include mixin.breakpoint(tablet) {
+        display: block;
+    }
+    @include mixin.breakpoint(desktop) {
+        display: none;
+    }
+}
+
+.mobile {
+    @include mixin.breakpoint(tablet) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+    @include mixin.breakpoint(desktop) {
+        display: block;
+    }
+}

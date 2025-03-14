@@ -1,0 +1,98 @@
+@use '../abstracts/abstracts' as var;
+@use '../abstracts/abstracts' as mixin;
+
+// Estilo por defecto para el footer
+.footer {
+    padding: 3rem 2rem;
+
+    &__logo {
+        display: block;
+        margin-bottom: 38px;
+
+        img {
+            width: 110px;
+        }
+    }
+
+    &__description {
+        color: var.$white;
+        line-height: 26px;
+        width: 85%;
+        margin-bottom: 38px;
+    }
+
+    &__socialmedia {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            display: inline-flex;
+            width: 25px;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+}
+
+// Estilo personalizado para el footer en la página home
+.home {
+    .footer{
+        background-color: var.$black;
+    }
+}
+
+// Estilo personalizado para el footer en la página maps
+.map {
+    .footer{
+        background-color: var.$brown;
+
+        &__description {
+            color: var.$black;
+        }
+    }
+}
+
+// Media queries tablet
+
+.footer {
+
+    @include mixin.breakpoint(tablet) {
+        display: flex;
+        padding: 3.5rem var.$padding-tablet-location;
+        align-items: start;
+        gap: 3.5rem;
+
+        &__logo {
+            width: max-content;
+        }
+    
+        &__description {
+            width: 40%;
+            margin: 0;
+        }
+    
+        &__socialmedia {
+            display: inline-block;
+            width: max-content;
+            margin-left: auto;
+
+            a+a {
+                margin-left: 1.25rem;
+            }
+        }
+    }
+
+    @include mixin.breakpoint(desktop) {
+        padding: 80px 165px;
+        gap: 140px;
+
+        &__logo {
+            img{
+                width: 160px;
+            }
+        }
+    }
+}
