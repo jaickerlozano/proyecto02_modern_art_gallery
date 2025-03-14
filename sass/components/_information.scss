@@ -46,6 +46,10 @@
     
             .tablet.img2 {
                 grid-area: img2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
     
             .tablet.img3 {
