@@ -26,7 +26,7 @@
         }
 
         @include mixin.breakpoint(desktop) {
-            gap: 10px;
+            gap: 125px;
             margin-bottom: 30px;
         }
     }
@@ -63,20 +63,28 @@
         }
 
         @include mixin.breakpoint(desktop) {
-            display: grid;
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
 
             .desktop.img2 {
                 img {
-                    width: 635px;
-                    height: 720px;
+                    width: 100%;
+                    height: 100%;
                 }
             }
 
             .desktop.img3 {
                 img {
-                    width: 445px;
-                    height: 313px;
+                    width: 100%;
+                    height: 100%;
                 }
+            }
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
             }
         }
     }
@@ -85,7 +93,7 @@
         margin-bottom: 1.5rem;
 
         @include mixin.breakpoint(tablet) {
-            width: 60%;
+            width: 100%;
             order: 1;
             margin-bottom: 0;
         }
@@ -136,15 +144,17 @@
     }
 
     @include mixin.breakpoint(desktop) {
-        width: 40%;
+        width: 100%;
 
         &__title {
+            width: 100%;
             font-size: 60px;
             line-height: 60px;
             margin-bottom: 32px;
         }
 
         &__description {
+            width: 100%;
             font-size: 22px;
             line-height: 32px;
         }
@@ -169,8 +179,8 @@
 
     @include mixin.breakpoint(desktop) {
         padding: 4rem 3rem;
-        width: 445px;
-        height: 377px;
+        width: 100%;
+        height: 100%;
 
         &__title {
             font-size: 60px;
