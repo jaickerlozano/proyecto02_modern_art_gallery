@@ -106,6 +106,7 @@
         align-items: stretch;
         max-width: 240px;
         margin-bottom: 120px;
+        @include mixin.button-animation();
 
         &--icon {
             padding: 1.5rem;

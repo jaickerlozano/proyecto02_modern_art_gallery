@@ -2,5 +2,6 @@
 @use '../abstracts/abstracts' as mixin;
 
 .button {
-    @include mixin.button();
+    @include mixin.button-style();
 }
+

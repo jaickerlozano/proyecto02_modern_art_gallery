@@ -26,9 +26,16 @@
   }
 }
 
-@mixin button($bg-color: var.$black, $color: var.$white) {
+@mixin button-style($bg-color: var.$black, $color: var.$white) {
   text-decoration: none;
   background-color: $bg-color;
   color: $color;
   padding: 1.5rem 2rem;
+}
+
+@mixin button-animation() {
+  &:hover a {
+    text-decoration: underline;
+    color:var.$brown;
+  }
 }

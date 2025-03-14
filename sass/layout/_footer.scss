@@ -78,6 +78,7 @@
             display: inline-block;
             width: max-content;
             margin-left: auto;
+            @include mixin.button-animation();
 
             a+a {
                 margin-left: 1.25rem;
