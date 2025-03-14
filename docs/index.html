@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Galería de arte Modern Art Gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Proyecto 02 Responsive - Modern Art Gallery</title>
+    <script type="module" crossorigin src="./assets/index-Df23_zTy.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BqUP0AWm.css">
+  </head>
+
+  <body class="home">
+
+    <div class="container">
+
+      <main>
+
+        <section class="location">
+          <figure class="location__img">
+            <img class="mobile" src="./assets/persons-DG1kQzg4.jpg" alt="Imagen de arte del museo" srcset="./assets/persons@2x-B8tZGESp.jpg">
+            <img class="tablet" src="./assets/persons-img-tablet-witQE3iu.jpg" alt="Imagen de arte del museo" srcset="./assets/persons-img-tablet@2x-AUP6FQnv.jpg">
+            <img class="desktop" src="./assets/persons-img-desktop-yX1QQigy.jpg" alt="Imagen de arte del museo" srcset="./assets/persons-img-desktop@2x-CF9Y3Fii.jpg">
+          </figure>
+          <div class="location__content">
+            <h1 class="location__title">MODERN <span>ART GALLERY</span></h1>
+            <p class="location__description">
+              The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.
+            </p>
+            <div class="location__button">
+              <span class="button">OUR LOCATION</span>
+              <a class="location__button--icon" href="./location.html"><img src="data:image/svg+xml,%3csvg%20width='10'%20height='26'%20viewBox='0%200%2010%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L9%2013L1%2025'%20stroke='white'/%3e%3c/svg%3e" alt=""></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="information">
+
+          <article class="information__1">
+            <figure class="information__1-img1">
+              <img class="mobile" src="./assets/museum-img-1-DHBrs4lT.jpg" alt="Imagen del museo" srcset="./assets/museum-img-1@2x-DCkvBpF8.jpg" loading="lazy">
+              <img class="tablet" src="./assets/museum-img-1-tablet-CzkfCdTF.jpg" alt="Imagen del museo" srcset="./assets/museum-img-1-tablet@2x-hN6k8LNk.jpg" loading="lazy">
+              <img class="desktop" src="./assets/museum-img-1-desktop-zUGwpVYI.jpg" alt="Imagen del museo" srcset="./assets/museum-img-1-desktop@2x-BXFoO-Ne.jpg" loading="lazy">
+            </figure>
+            <div class="information__1-content">
+              <h2 class="information__1-content__title">Your Day at the Gallery</h2>
+              <p class="information__1-content__description">
+                Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.
+              </p>
+            </div>
+          </article>
+
+          <article class="information__2">
+            <figure class="information__2-img1">
+              <img class="mobile" src="./assets/museum-img-2-IhwyPuWt.jpg" alt="Imagen del museo" srcset="./assets/museum-img-2@2x-uFullc2L.jpg" loading="lazy">
+              <img class="mobile" src="./assets/museum-img-3-CaY9luKd.jpg" alt="Imagen del museo" srcset="./assets/museum-img-3@2x-5_6-9OW8.jpg" loading="lazy">
+            </figure>
+            <figure class="tablet img2">
+              <img src="./assets/museum-img-2-tablet-CC0pJNd4.jpg" alt="Imagen del museo" srcset="./assets/museum-img-2-tablet@2x-Dy5LPBba.jpg" loading="lazy">
+            </figure>
+            <figure class="desktop img2">
+              <img src="./assets/museum-img-2-desktop-BCuTpjuO.jpg" alt="Imagen del museo" srcset="./assets/museum-img-2-desktop@2x-BcTW3KZ_.jpg" loading="lazy">
+            </figure>
+            <figure class="tablet img3">
+              <img src="./assets/museum-img-3-tablet-c3Ts4otI.jpg" alt="Imagen del museo" srcset="./assets/museum-img-3-tablet@2x-CUB13MXg.jpg" loading="lazy">
+            </figure>
+            <!--Se añade contenedor div para pasar de grip a flex en desktop-->
+            <div class="information__2-container">
+              <figure class="desktop img3">
+                <img src="./assets/museum-img-3-desktop-_5aXSsBD.jpg" alt="Imagen del museo" srcset="./assets/museum-img-3-desktop@2x-CJJYWurP.jpg" loading="lazy">
+              </figure>
+              <div class="information__2-content">
+                <h2 class="information__2-content__title">COME & BE INSPIRED</h2>
+                <p class="information__2-content__description">
+                  We’re excited to welcome you to our gallery and see how our collections influence you.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <a class="footer__logo" href="#"><img src="data:image/png;base64,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" alt="Logotipo de la compañía" srcset="data:image/png;base64,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"></a>
+        <p class="footer__description">
+          The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+
+        <aside class="footer__socialmedia">
+          <a href="#" aria-label="Facebook"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M18.8958%200H1.10417C0.494167%200%200%200.494167%200%201.10417V18.8967C0%2019.5058%200.494167%2020%201.10417%2020H10.6833V12.255H8.07667V9.23667H10.6833V7.01083C10.6833%204.4275%2012.2608%203.02083%2014.5658%203.02083C15.67%203.02083%2016.6183%203.10333%2016.895%203.14V5.84L15.2967%205.84083C14.0433%205.84083%2013.8008%206.43667%2013.8008%207.31V9.2375H16.79L16.4008%2012.2558H13.8008V20H18.8975C19.5058%2020%2020%2019.5058%2020%2018.8958V1.10417C20%200.494167%2019.5058%200%2018.8958%200Z'%20fill='white'/%3e%3c/svg%3e" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10%200C7.28417%200%206.94417%200.0116667%205.8775%200.06C2.24583%200.226667%200.2275%202.24167%200.0608333%205.87667C0.0116667%206.94417%200%207.28417%200%2010C0%2012.7158%200.0116667%2013.0567%200.06%2014.1233C0.226667%2017.755%202.24167%2019.7733%205.87667%2019.94C6.94417%2019.9883%207.28417%2020%2010%2020C12.7158%2020%2013.0567%2019.9883%2014.1233%2019.94C17.7517%2019.7733%2019.775%2017.7583%2019.9392%2014.1233C19.9883%2013.0567%2020%2012.7158%2020%2010C20%207.28417%2019.9883%206.94417%2019.94%205.8775C19.7767%202.24917%2017.7592%200.2275%2014.1242%200.0608333C13.0567%200.0116667%2012.7158%200%2010%200ZM10%201.8025C12.67%201.8025%2012.9867%201.8125%2014.0417%201.86083C16.7517%201.98417%2018.0175%203.27%2018.1408%205.96C18.1892%207.01417%2018.1983%207.33083%2018.1983%2010.0008C18.1983%2012.6717%2018.1883%2012.9875%2018.1408%2014.0417C18.0167%2016.7292%2016.7542%2018.0175%2014.0417%2018.1408C12.9867%2018.1892%2012.6717%2018.1992%2010%2018.1992C7.33%2018.1992%207.01333%2018.1892%205.95917%2018.1408C3.2425%2018.0167%201.98333%2016.725%201.86%2014.0408C1.81167%2012.9867%201.80167%2012.6708%201.80167%2010C1.80167%207.33%201.8125%207.01417%201.86%205.95917C1.98417%203.27%203.24667%201.98333%205.95917%201.86C7.01417%201.8125%207.33%201.8025%2010%201.8025ZM4.865%2010C4.865%207.16417%207.16417%204.865%2010%204.865C12.8358%204.865%2015.135%207.16417%2015.135%2010C15.135%2012.8367%2012.8358%2015.1358%2010%2015.1358C7.16417%2015.1358%204.865%2012.8358%204.865%2010ZM10%2013.3333C8.15917%2013.3333%206.66667%2011.8417%206.66667%2010C6.66667%208.15917%208.15917%206.66667%2010%206.66667C11.8408%206.66667%2013.3333%208.15917%2013.3333%2010C13.3333%2011.8417%2011.8408%2013.3333%2010%2013.3333ZM14.1375%204.6625C14.1375%204%2014.675%203.4625%2015.3383%203.4625C16.0008%203.4625%2016.5375%204%2016.5375%204.6625C16.5375%205.325%2016.0008%205.8625%2015.3383%205.8625C14.675%205.8625%2014.1375%205.325%2014.1375%204.6625Z'%20fill='white'/%3e%3c/svg%3e" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='17'%20viewBox='0%200%2020%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%202.17221C19.2642%202.49888%2018.4733%202.71888%2017.6433%202.81805C18.4908%202.31055%2019.1417%201.50638%2019.4475%200.548047C18.655%201.01805%2017.7767%201.35971%2016.8417%201.54388C16.0942%200.74638%2015.0267%200.248047%2013.8467%200.248047C11.1975%200.248047%209.25083%202.71971%209.84917%205.28555C6.44%205.11471%203.41667%203.48138%201.3925%200.99888C0.3175%202.84305%200.835%205.25555%202.66167%206.47721C1.99%206.45555%201.35667%206.27138%200.804167%205.96388C0.759167%207.86471%202.12167%209.64305%204.095%2010.0389C3.5175%2010.1955%202.885%2010.2322%202.24167%2010.1089C2.76333%2011.7389%204.27833%2012.9247%206.075%2012.958C4.35%2014.3105%202.17667%2014.9147%200%2014.658C1.81583%2015.8222%203.97333%2016.5014%206.29%2016.5014C13.9083%2016.5014%2018.2125%2010.0672%2017.9525%204.29638C18.7542%203.71721%2019.45%202.99471%2020%202.17221Z'%20fill='white'/%3e%3c/svg%3e" alt=""></a>
+        </aside>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
