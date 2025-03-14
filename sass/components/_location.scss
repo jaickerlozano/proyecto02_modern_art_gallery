@@ -20,15 +20,14 @@
     &__img {
         width: 100%;
         margin-bottom: 2rem;
+
         @include mixin.breakpoint(tablet) {
             margin-bottom: 0;
-        }
-
-        .tablet {
-            @include mixin.breakpoint(tablet) {
+            .tablet {
                 width: 120%;
             }
         }
+
 
         @include mixin.breakpoint(desktop) {
             width: 40%;
@@ -108,7 +107,7 @@
         max-width: 240px;
         margin-bottom: 120px;
 
-        a:last-child {
+        &--icon {
             padding: 1.5rem;
             background-color: var.$brown;
             width: 56px;
@@ -125,18 +124,18 @@
 }
 
 // Activación de elementos según su clase y media query
+.mobile {
+    @include mixin.breakpoint(tablet) {
+        display: none;
+    }
+}
+
 .tablet {
     display: none;
     @include mixin.breakpoint(tablet) {
         display: block;
     }
     @include mixin.breakpoint(desktop) {
-        display: none;
-    }
-}
-
-.mobile {
-    @include mixin.breakpoint(tablet) {
         display: none;
     }
 }
