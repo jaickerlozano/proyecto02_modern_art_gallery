@@ -34,8 +34,13 @@
 }
 
 @mixin button-animation() {
-  &:hover a {
-    text-decoration: underline;
-    color:var.$brown;
+  &:hover a.button {
+    background-color:var.$brown;
+  }
+}
+
+@mixin button-arrow-animation() {
+  &:hover a.location__button--icon, &:hover a.btn-back {
+    background-color:var.$black;
   }
 }

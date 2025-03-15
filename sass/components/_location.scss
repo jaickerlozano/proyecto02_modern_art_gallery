@@ -107,6 +107,7 @@
         max-width: 240px;
         margin-bottom: 120px;
         @include mixin.button-animation();
+        @include mixin.button-arrow-animation();
 
         &--icon {
             padding: 1.5rem;
