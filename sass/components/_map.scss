@@ -19,7 +19,12 @@
         @include mixin.button-animation();
         @include mixin.button-arrow-animation();
 
+        .button {
+            transition-duration: 0.5s;
+        }
+
         .btn-back {
+            transition-duration: 0.5s;
             padding: 1.5rem;
             background-color: var.$brown;
             width: 56px;
@@ -65,7 +70,7 @@
 
 }
 
-// Media queries tablet
+// Media queries tablet and desktop
 
 .maps {
     @include mixin.breakpoint(tablet) {

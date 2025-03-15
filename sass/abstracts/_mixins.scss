@@ -35,12 +35,14 @@
 
 @mixin button-animation() {
   &:hover a.button {
+    transition-duration: 0.5s;
     background-color:var.$brown;
   }
 }
 
 @mixin button-arrow-animation() {
   &:hover a.location__button--icon, &:hover a.btn-back {
+    transition-duration: 0.5s;
     background-color:var.$black;
   }
 }
