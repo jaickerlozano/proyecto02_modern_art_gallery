@@ -36,7 +36,7 @@
    ```
 5. Abre tu navegador en `http://localhost:5173/`
 
-## 🎥 Capturas de Pantalla
+## 🎥 Preview de Pantalla
 
 ![Header GathSession Preview](https://github.com/jaickerlozano/proyecto02_modern_art_gallery/blob/main/public/modern_art_gallery_gif.gif)
 
