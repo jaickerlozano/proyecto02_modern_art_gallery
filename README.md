@@ -1,6 +1,10 @@
 # Modern Art Gallery - Landing Page Responsive
 
-![Modern Art Gallery Preview](ruta-de-tu-imagen)
+### Home Page
+![Modern Art Gallery Preview](https://github.com/jaickerlozano/proyecto02_modern_art_gallery/blob/main/public/imagen_home_modern_art_gallery.png)
+
+### Location Page
+![Modern Art Gallery Preview](https://github.com/jaickerlozano/proyecto02_modern_art_gallery/blob/main/public/imagen_location_modern_art_gallery.png)
 
 ## 🎨 Descripción
 
@@ -20,7 +24,7 @@
    ```
 2. Accede al directorio del proyecto:
    ```bash
-   cd modern_art_gallery
+   cd proyecto02_modern_art_gallery
    ```
 3. Instala las dependencias:
    ```bash
@@ -34,7 +38,7 @@
 
 ## 🎥 Capturas de Pantalla
 
-![Header GathSession Preview](https://github.com/jaickerlozano/proyecto10_header_gathsession_css/blob/main/public/proyecto10_header_gathsession.gif)
+![Header GathSession Preview](https://github.com/jaickerlozano/proyecto02_modern_art_gallery/blob/main/public/modern_art_gallery_gif.gif)
 
 ## ✨ Características
 
