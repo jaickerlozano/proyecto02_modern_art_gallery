@@ -30,7 +30,7 @@
             display: inline-flex;
             width: 25px;
 
-            img {
+            span {
                 width: 20px;
             }
         }
@@ -78,7 +78,6 @@
             display: inline-block;
             width: max-content;
             margin-left: auto;
-            @include mixin.button-animation();
 
             a+a {
                 margin-left: 1.25rem;
